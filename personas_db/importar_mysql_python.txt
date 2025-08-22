@@ -1,0 +1,25 @@
+Para trabajar con MySQL en python recomiendo usar los entornos virtuales en Vs Code para ellos se debe de usar
+los sigueinetes comandos:
+
+NOTA: para ello se debe estar en la ruta o carpeta en la que se quiera instalar el entorno, para ello se puede 
+copiar el path haciendo clic derecho sobre la carpeta donde se desea instalar el entorno y copiando el path (Copy Path)
+y cambiandode al lugar correcto con cd Path_deseado.
+
+Para crear el entorno tanto en Linux como en Windows:
+python3 -m venv nombre_del_entorno
+
+Para activarlo en Windows:
+nombre_del_entorno\Scripts\activate
+
+Para activarlo en Linux:
+source nombre_del_entorno/bin/activate
+
+para ver que esté activado el entorno deberá aparecer (venv) en la terminal.
+
+Imporatar el módulo de MySQL a python 
+se deberá instalar con el sigueinete comando. (asegurate de estar en la carpeta o ruta correcta del entorno)
+
+python -m pip install mysql-connector-python
+
+Con todo esto ya estarás listo para poder usar mysql con python
+

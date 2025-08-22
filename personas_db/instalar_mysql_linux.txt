@@ -1,0 +1,30 @@
+En esta sección se abordará el uso de Mysql especificamente la versión community server.
+en este caso lo he instalado en linux por lo que usé los siguientes comandos:
+
+sudo apt update --> para actualizar los paquetes antes de la instalación
+sudo apt install mysql-server -y --> para instalar Mysql
+
+systemctl status mysql --> verifica que MySQL se esté ejecutando correctamente debe decir active (running)
+
+sudo mysql -u root -p --> Se usa para accder a MySQL con el usuario root con la contraseña del equipo
+
+En el caso de la instalación en windos se hace descargando el ejecutable .exe, recomiendo buscar un tutorial.
+
+siguiendo en Linux, para poder agregar otro usuario a MySQL debemos entarar primero con root, despues ejecutar los siguientes comandos:
+
+CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'contraseña'; --> Esto creará un usuario de manera local para la computadora unicamnete
+GRANT ALL PRIVILEGES ON *.* TO 'antonio'@'localhost' WITH GRANT OPTION; --> Otorga todos los permisos al nuevo usuario.
+
+NOTA: Si se está trabajando en algún proyecto colavorativo recomeindo verfifcar que permisos se le da a los usuarios ya que estos pueden 
+tener acceso a todas las bases de datos e información y no usar el comando anterior, busca que permisos darle a los
+usuarios y el comando correspondiente.
+
+Ahora una vez creado el nuevo usuario y que este tenga los permisos necesarios, intenten acceder con este nuevo usuario.
+
+sudo mysql -u usuario_nuevo -p --> les pedirá la constarseña establecida para el usuario.
+
+
+
+
+
+
